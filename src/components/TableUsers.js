@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
 import Table from "react-bootstrap/Table";
 import { fetchAllUser } from "../services/User.services";
@@ -77,3 +78,52 @@ const TablesUsers = (props) => {
 };
 
 export default TablesUsers;
+=======
+import axios from 'axios';
+import { useEffect } from 'react';
+import Table from 'react-bootstrap/Table';
+
+
+const TablesUsers = (props) => {
+
+    useEffect(() => {
+        axios.get("https://reqres.in/api/users?page=1").then(data => {
+            console.log('Data:: ', data);
+        })
+    }, [])
+
+    return (<>
+        <Table striped bordered hover>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td colSpan={2}>Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </Table>
+    </>)
+}
+
+export default TablesUsers;
+>>>>>>> f3e4b87658c15c679f031e48fd6a14e677e187bd
