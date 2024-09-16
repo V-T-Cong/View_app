@@ -75,3 +75,5 @@ const TablesUsers = (props) => {
 		</>
 	);
 };
+
+export default TablesUsers;

@@ -11,10 +11,7 @@
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1",
-<<<<<<< HEAD
     "react-paginate": "^8.2.0",
-=======
->>>>>>> f3e4b87658c15c679f031e48fd6a14e677e187bd
     "react-scripts": "^5.0.1",
     "sass": "^1.78.0",
     "web-vitals": "^2.1.4"
